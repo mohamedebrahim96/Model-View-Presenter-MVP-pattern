@@ -1,6 +1,7 @@
 package com.vacuum.fragmentnavigationmvp.ui.fragmentone
 
 import android.os.Bundle
+import android.support.annotation.Nullable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,14 +17,16 @@ class Fragmentone : BaseFragment(),FragmentoneMvpView {
         get() =  R.layout.fragment_layout
 
     var presenter: FragmentonePresenter? = null
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
 
+
+    override fun onCreateView(inflater: LayoutInflater, @Nullable container: ViewGroup?,
+                              @Nullable savedInstanceState: Bundle?): View? {
+        rootView = inflater.inflate(layout, container, false)
         presenter?.getText()
 
         btn_interact.setOnClickListener{ navigationPresenter!!.addFragment(Fragmenttwo()) }
+        return rootView
     }
-
     override fun setText(str: String) {
         tv_text.setText(str)
     }
