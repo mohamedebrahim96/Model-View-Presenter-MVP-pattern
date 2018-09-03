@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity(), MainMvpView {
     }
 
 
+
+
+
     override fun setFragment(basefragmnt: BaseFragment) {
 
         basefragmnt.atachPresenter(presenter!!)
