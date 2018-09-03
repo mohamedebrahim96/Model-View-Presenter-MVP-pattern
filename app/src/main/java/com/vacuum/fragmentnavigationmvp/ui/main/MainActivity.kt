@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity(), MainMvpView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        presenter?.getRandomFragment()
+        presenter!!.getRandomFragment()
     }
 
 
