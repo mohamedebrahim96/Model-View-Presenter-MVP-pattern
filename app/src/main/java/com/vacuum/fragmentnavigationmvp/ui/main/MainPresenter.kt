@@ -9,12 +9,13 @@ import java.util.*
 class MainPresenter(var view: MainMvpView) :MainMvpPresenter,BaseMvp.Presenter {
 
     override fun getRandomFragment() {
-        if (Random().nextBoolean()){
+        /**if (Random().nextBoolean()){
             view.setFragment(Fragmentone())
         }else{
             view.setFragment(Fragmenttwo())
 
-        }
+        }*/
+        view.setFragment(Fragmentone())
     }
 
     override fun addFragment(fragment: BaseFragment) {
