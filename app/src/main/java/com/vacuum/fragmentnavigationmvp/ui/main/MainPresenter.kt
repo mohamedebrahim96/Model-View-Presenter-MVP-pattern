@@ -13,8 +13,9 @@ class MainPresenter(var view: MainMvpView) :MainMvpPresenter,BaseMvp.Presenter {
             view.setFragment(Fragmentone())
         }else{
             view.setFragment(Fragmenttwo())
-
         }
+
+
     }
 
     override fun addFragment(fragment: BaseFragment) {
