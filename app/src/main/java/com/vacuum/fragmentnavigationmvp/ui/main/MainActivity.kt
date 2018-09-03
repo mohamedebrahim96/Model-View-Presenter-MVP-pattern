@@ -19,11 +19,6 @@ class MainActivity : AppCompatActivity(), MainMvpView {
         presenter?.getRandomFragment()
     }
 
-
-
-
-
-
     override fun setFragment(basefragmnt: BaseFragment) {
 
         basefragmnt.atachPresenter(presenter!!)
