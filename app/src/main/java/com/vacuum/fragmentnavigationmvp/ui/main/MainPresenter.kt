@@ -16,6 +16,8 @@ class MainPresenter(var view: MainMvpView) :MainMvpPresenter,BaseMvp.Presenter {
         }
 
 
+
+
     }
 
     override fun addFragment(fragment: BaseFragment) {
