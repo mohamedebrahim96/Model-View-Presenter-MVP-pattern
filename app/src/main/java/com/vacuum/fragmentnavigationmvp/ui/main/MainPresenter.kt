@@ -22,3 +22,4 @@ class MainPresenter(var view: MainMvpView) :MainMvpPresenter,BaseMvp.Presenter {
         view.setFragment(fragment)
     }
 }
+
